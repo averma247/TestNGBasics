@@ -4,3 +4,5 @@
 2024-03-14 00:29:20.834 DEBUG pages.BasePage - Entering Textbox at location: [[ChromeDriver: chrome on MAC (b270a41fb8f9e1c94e562b814c1f3369)] -> xpath: //textArea[@title='Search']]
 2024-03-14 12:55:59.512 DEBUG pages.BasePage - Entering Textbox at location: [[ChromeDriver: chrome on MAC (3e329c2bfbd83aa8312956863fcae3ea)] -> xpath: //textArea[@title='Search']]
 2024-03-14 12:56:57.510 DEBUG pages.BasePage - Entering Textbox at location: (476, 210)
+2024-03-14 13:48:09.045 DEBUG pages.BasePage - Entering Textbox at location: (476, 213)
+2024-03-14 13:51:39.415 DEBUG pages.BasePage - Entering Textbox at location: (476, 213)
