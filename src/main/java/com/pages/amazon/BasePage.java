@@ -65,6 +65,15 @@ public class BasePage {
 		getTextValue= driver.findElement(locator).getText();
 		return getTextValue;
 	}
+	
+	
+	public String getTextAt(WebElement element){
+		String getTextValue=null;
+		logger.debug("Getting Text value from: "+ element.getLocation());
+		waitFor(ExpectedConditions.visibilityOf(element),timeout);
+		getTextValue= element.getText();
+		return getTextValue;
+	}
 
 	public void clickOnButton(By locator){
 

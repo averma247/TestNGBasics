@@ -1,6 +1,7 @@
 package amazonTesting;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -8,11 +9,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import reports.ExtentManager;
+import reports.Reporter;
 
 public class TestBase {
 	
@@ -28,6 +34,14 @@ public class TestBase {
 		
 		configProp.load(TestBase.class.getClassLoader().getResourceAsStream("config.properties"));
 		
+	}
+	
+	
+	@BeforeMethod
+	public void beforeMethodSetup(Method m){
+
+		Reporter.startTestCase(m.getName());
+
 	}
 	
 	
@@ -64,6 +78,14 @@ public class TestBase {
 
 		}*/
 		driver = new ChromeDriver(options);
+	}
+	
+	@AfterMethod
+	public void cleanup(ITestResult result) {
+		if (result.getThrowable() != null)
+			Reporter.reportStep("Failure cause " + result.getThrowable().getMessage(), result.getStatus());
+		Reporter.reportStep("Test Complete", result.getStatus());
+		ExtentManager.getInstance().flush();
 	}
 	
 	

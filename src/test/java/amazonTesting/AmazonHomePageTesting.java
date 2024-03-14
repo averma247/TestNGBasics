@@ -1,13 +1,17 @@
 package amazonTesting;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.pages.amazon.HomePage;
 
+import reports.Reporter;
+
 public class AmazonHomePageTesting extends TestBase{
 	
 	HomePage homepage;
+	String productsearch=null;
 	
 	
 	@BeforeClass
@@ -20,7 +24,14 @@ public class AmazonHomePageTesting extends TestBase{
 	@Test
 	public void verifyHomePage() {
 		
-		homepage.searchProduct("iPhone 11");
+		productsearch="iPhone 13";
+		
+		Reporter.reportStep("Searching Product: "+productsearch);
+		
+		homepage.searchProduct(productsearch);
+		Assert.assertTrue(homepage.checkResultText(productsearch), "Searched text doesnot matched.");
+		Reporter.reportStep("Products searched on Home page");
+
 		
 	}
 

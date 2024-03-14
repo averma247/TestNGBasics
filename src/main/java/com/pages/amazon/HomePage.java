@@ -20,10 +20,21 @@ public class HomePage extends BasePage{
 	@FindBy(id="nav-search-submit-button")
 	WebElement searchButton;
 	
+	@FindBy(xpath="//span[contains(text(),'results')]/following-sibling::*[2]")
+	WebElement resultBarText;
+	
 	public void searchProduct(String searchText) {
 		enterTextInTextBox(searchTextBox, searchText);
 		clickOnButton(searchButton);
 		
+	}
+	
+	public boolean checkResultText(String searchedText) {
+		String actualString = getTextAt(resultBarText);
+		if(actualString.contains(searchedText))
+			return true;
+		else
+			return false;
 	}
 
 }
