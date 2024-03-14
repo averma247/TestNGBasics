@@ -3,7 +3,7 @@ package googleTesting;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pages.SearchPage;
+import com.pages.google.SearchPage;
 
 public class GoogleSearchTest extends TestBase{
 	

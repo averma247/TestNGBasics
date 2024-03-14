@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-14T07:26:52Z" name="Default suite" finished-at="2024-03-14T07:26:57Z" duration-ms="5062">
+  <suite started-at="2024-03-14T09:04:45Z" name="Default suite" finished-at="2024-03-14T09:04:48Z" duration-ms="3466">
     <groups>
     </groups>
-    <test started-at="2024-03-14T07:26:52Z" name="Default test" finished-at="2024-03-14T07:26:57Z" duration-ms="5062">
+    <test started-at="2024-03-14T09:04:45Z" name="Default test" finished-at="2024-03-14T09:04:48Z" duration-ms="3466">
       <class name="googleTesting.GoogleSearchTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:googleTesting.GoogleSearchTest@20c0a64d]" started-at="2024-03-14T12:56:52Z" name="init" finished-at="2024-03-14T12:56:52Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:googleTesting.GoogleSearchTest@1115ec15]" started-at="2024-03-14T14:34:45Z" name="init" finished-at="2024-03-14T14:34:45Z" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="openApplication()[pri:0, instance:googleTesting.GoogleSearchTest@20c0a64d]" started-at="2024-03-14T12:56:52Z" name="openApplication" finished-at="2024-03-14T12:56:57Z" duration-ms="4534" status="PASS">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:googleTesting.GoogleSearchTest@1115ec15]" started-at="2024-03-14T14:34:45Z" name="openApplication" finished-at="2024-03-14T14:34:48Z" duration-ms="2897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:googleTesting.GoogleSearchTest@20c0a64d]" started-at="2024-03-14T12:56:57Z" name="setup" finished-at="2024-03-14T12:56:57Z" duration-ms="159" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:googleTesting.GoogleSearchTest@1115ec15]" started-at="2024-03-14T14:34:48Z" name="setup" finished-at="2024-03-14T14:34:48Z" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearch()[pri:0, instance:googleTesting.GoogleSearchTest@20c0a64d]" started-at="2024-03-14T12:56:57Z" name="verifySearch" finished-at="2024-03-14T12:56:57Z" duration-ms="181" status="PASS">
+        <test-method signature="verifySearch()[pri:0, instance:googleTesting.GoogleSearchTest@1115ec15]" started-at="2024-03-14T14:34:48Z" name="verifySearch" finished-at="2024-03-14T14:34:48Z" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:googleTesting.GoogleSearchTest@20c0a64d]" started-at="2024-03-14T12:56:57Z" name="tearDown" finished-at="2024-03-14T12:56:57Z" duration-ms="180" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:googleTesting.GoogleSearchTest@1115ec15]" started-at="2024-03-14T14:34:48Z" name="tearDown" finished-at="2024-03-14T14:34:48Z" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -135,7 +135,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/4v/t34_23_j00gbhfghgstr2jbc0000gq/T/testng-eclipse-1000962834/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/4v/t34_23_j00gbhfghgstr2jbc0000gq/T/testng-eclipse-344608202/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +144,11 @@
 &lt;suite thread-count=&quot;-1&quot; name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;googleTesting.GoogleSearchTest&quot;/&gt;
+      &lt;class name=&quot;googleTesting.GoogleSearchTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifySearch&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- googleTesting.GoogleSearchTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -188,12 +192,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifySearch')
 data.setCell(0, 2, 'googleTesting.GoogleSearchTest')
-data.setCell(0, 3, 181);
+data.setCell(0, 3, 223);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 181 ms</span>
+              <span class="suite-total-time">Total running time: 223 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -230,15 +234,15 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4540 ms</span>
+                <span class="method-start">2902 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifySearch</span>
-                <span class="method-start">4700 ms</span>
+                <span class="method-start">3075 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4884 ms</span>
+                <span class="method-start">3299 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
