@@ -11,3 +11,5 @@
 2024-03-14 14:53:54.576 DEBUG com.pages.amazon.BasePage - Clicking on button at location: (989, 10)
 2024-03-14 14:54:38.176 DEBUG com.pages.amazon.BasePage - Entering Textbox at location: (390, 11)
 2024-03-14 14:54:38.343 DEBUG com.pages.amazon.BasePage - Clicking on button at location: (989, 10)
+2024-03-14 15:05:09.313 DEBUG com.pages.amazon.BasePage - Entering Textbox at location: (390, 11)
+2024-03-14 15:05:09.505 DEBUG com.pages.amazon.BasePage - Clicking on button at location: (989, 10)
