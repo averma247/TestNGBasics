@@ -10,7 +10,7 @@ This repository contains a sample test automation framework built using Selenium
 
 ## Installation
 1. Clone this repository: git clone [https://github.com/averma247/TestNGBasics.git]
-2. Navigate to the project directory: cd your-repo
+2. Navigate to the project directory: cd TestNGBasics
 3. Install dependencies: mvn clean install
 4. Configure any environment-specific settings (e.g., browser type, URLs).
    
