@@ -1,4 +1,4 @@
-package pages;
+package com.pages.google;
 
 import java.util.concurrent.TimeUnit;
 
