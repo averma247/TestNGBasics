@@ -1,5 +1,7 @@
 package reports;
 
+import java.io.IOException;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.ITestResult;
@@ -39,6 +41,12 @@ public class Reporter {
     public static synchronized void reportStep(String desc) {
         logger.info(desc);
         ExtentTestManager.getTest().info(desc);
+    }
+    
+    public static synchronized void reportStepWithScreenShot(String path) throws IOException {
+    	logger.info("Path of screenshot "+path);
+    	ExtentTestManager.getTest().addScreenCaptureFromPath(path);
+    	
     }
 
 }

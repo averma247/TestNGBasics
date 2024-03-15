@@ -16,9 +16,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import reports.ExtentManager;
 import reports.Reporter;
+import utils.Screenshots;
 
 public class TestBase {
 	
@@ -81,9 +84,12 @@ public class TestBase {
 	}
 	
 	@AfterMethod
-	public void cleanup(ITestResult result) {
-		if (result.getThrowable() != null)
+	public void cleanup(ITestResult result) throws IOException {
+		if (result.getThrowable() != null) {
 			Reporter.reportStep("Failure cause " + result.getThrowable().getMessage(), result.getStatus());
+			Reporter.reportStepWithScreenShot(Screenshots.takeSnapShot(driver));
+		}
+			
 		Reporter.reportStep("Test Complete", result.getStatus());
 		ExtentManager.getInstance().flush();
 	}
