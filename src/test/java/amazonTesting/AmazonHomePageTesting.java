@@ -29,7 +29,7 @@ public class AmazonHomePageTesting extends TestBase{
 		Reporter.reportStep("Searching Product: "+productsearch);
 		
 		homepage.searchProduct(productsearch);
-		Assert.assertTrue(homepage.checkResultText(productsearch), "Searched text doesnot matched.");
+		Assert.assertTrue(homepage.checkResultText(productsearch), "Searched text does not matched.");
 		Reporter.reportStep("Products searched on Home page");
 
 		
