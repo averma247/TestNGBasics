@@ -100,7 +100,7 @@ public class TestBase {
 		options.addArguments("--disable-extensions");
 		options.addArguments("--disable-application-cache");
 
-		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),options);
+		driver = new RemoteWebDriver(new URL("http://172.19.0.2:4444/wd/hub"),options);
 	}
 
 
