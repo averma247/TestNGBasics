@@ -24,7 +24,7 @@ public class AmazonHomePageTesting extends TestBase{
 	@Test
 	public void verifyHomePage() {
 		
-		productsearch="iPhone";
+		productsearch="iPhone 14";
 		
 		Reporter.reportStep("Searching Product: "+productsearch);
 		
