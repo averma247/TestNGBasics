@@ -24,12 +24,12 @@ public class AmazonHomePageTesting extends TestBase{
 	@Test
 	public void verifyHomePage() {
 		
-		productsearch="iPhone 13";
+		productsearch="iPhone";
 		
 		Reporter.reportStep("Searching Product: "+productsearch);
 		
 		homepage.searchProduct(productsearch);
-		//Assert.assertTrue(homepage.checkResultText(productsearch), "Searched text does not matched.");
+		Assert.assertTrue(homepage.checkResultText(productsearch), "Searched text does not matched.");
 		Reporter.reportStep("Products searched on Home page");
 
 		
