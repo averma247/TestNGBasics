@@ -8,7 +8,7 @@ import com.pages.amazon.HomePage;
 
 import reports.Reporter;
 
-public class AmazonHomePageTesting extends TestBase{
+public class    AmazonHomePageTesting extends  TestBase{
 	
 	HomePage homepage;
 	String productsearch=null;
