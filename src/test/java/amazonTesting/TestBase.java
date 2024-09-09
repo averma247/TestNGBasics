@@ -36,7 +36,7 @@ public class TestBase {
 	public static WebDriverWait wait;
 	
 	
-	
+
 	@BeforeSuite
 	public void init() throws IOException {
 		
