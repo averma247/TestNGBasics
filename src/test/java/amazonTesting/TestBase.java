@@ -36,6 +36,7 @@ public class TestBase {
 	public static WebDriverWait wait;
 	
 	
+	
 	@BeforeSuite
 	public void init() throws IOException {
 		
@@ -55,8 +56,10 @@ public class TestBase {
 	@BeforeTest
 	public void openApplication() throws MalformedURLException {
 		//if chrome is selected.
-		//setupChrome();
-		setUpRemote();
+		if(configProp.getProperty("environment").equalsIgnoreCase("remote")) {
+			setUpRemote();
+		}
+		setupChrome();
 		driver.manage().timeouts().implicitlyWait(Long.parseLong(configProp.getProperty("implicitwait")), TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
