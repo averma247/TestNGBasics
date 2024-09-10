@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -60,7 +61,7 @@ public class TestBase {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().setScriptTimeout(120, TimeUnit.SECONDS);
         driver.get(configProp.getProperty("url"));
-        wait = new WebDriverWait(driver, Long.parseLong(configProp.getProperty("implicitwait")));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(Long.parseLong(configProp.getProperty("explicitwait"))));
 
 
     }

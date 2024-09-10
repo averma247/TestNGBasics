@@ -1,5 +1,6 @@
 package com.pages.google;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
@@ -33,7 +34,7 @@ public class BasePage {
 
 	private void waitFor(ExpectedCondition<WebElement> condition, Integer timeout){
 		timeout=timeout!=null?timeout:5;
-		explicitwait= new WebDriverWait(driver, timeout);
+		explicitwait= new WebDriverWait(driver, Duration.ofSeconds(timeout));
 		explicitwait.until(condition);
 	}
 	
@@ -110,7 +111,7 @@ public class BasePage {
                         return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
                     }
                 };
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(pageLoadCondition);
 		
 		
