@@ -59,7 +59,9 @@ public class TestBase {
 		if(configProp.getProperty("environment").equalsIgnoreCase("remote")) {
 			setUpRemote();
 		}
-		setupChrome();
+		else{
+			setupChrome();
+		}
 		driver.manage().timeouts().implicitlyWait(Long.parseLong(configProp.getProperty("implicitwait")), TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -103,7 +105,7 @@ public class TestBase {
 		options.addArguments("--disable-extensions");
 		options.addArguments("--disable-application-cache");
 
-		driver = new RemoteWebDriver(new URL("http://192.168.1.6:4444/wd/hub"),options);
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),options);
 	}
 
 
