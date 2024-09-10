@@ -21,7 +21,7 @@ public class    AmazonHomePageTesting extends  TestBase{
 		
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void verifyHomePage() {
 		
 		productsearch="iPhone 15";
@@ -33,6 +33,23 @@ public class    AmazonHomePageTesting extends  TestBase{
 		Reporter.reportStep("Products searched on Home page");
 
 		
+	}
+	@Test(enabled = true,priority = 0)
+	public  void verifyItemAddedToCart(){
+		productsearch="Samsung Galaxy S24 Ultra 5G";
+
+		Reporter.reportStep("Searching Product: "+productsearch);
+
+		homepage.searchProduct(productsearch);
+		Assert.assertTrue(homepage.checkResultText(productsearch), "Searched text does not matched.");
+		Reporter.reportStep("Products searched on Home page");
+
+	}
+
+	@Test(enabled = false,priority = 0)
+
+	public void verifyItemDeletedFromCart(){
+
 	}
 
 }
