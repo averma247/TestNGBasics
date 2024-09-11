@@ -122,9 +122,16 @@ public class BasePage {
                         return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
                     }
                 };
+        logger.debug("waiting for page to load.");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(pageLoadCondition);
 
+
+    }
+    public void scrollToElement(WebElement ele){
+        logger.debug("scrolling to element: " + ele.getAccessibleName());
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", ele);
 
     }
 

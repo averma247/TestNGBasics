@@ -18,6 +18,8 @@ public class HomePage extends BasePage {
 
 
     public void clickOnElementsLink(){
+        waitForPageLoad();
+        scrollToElement(elementXpathOptions);
         clickOnButton(elementXpathOptions);
     }
 
