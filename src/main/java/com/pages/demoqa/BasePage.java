@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BasePage {
@@ -134,6 +135,17 @@ public class BasePage {
         js.executeScript("arguments[0].scrollIntoView(true);", ele);
 
     }
+
+    public List<WebElement> getAllTheTableRows(String tableRowXpath){
+        List<WebElement> rows = driver.findElements(By.xpath(tableRowXpath));
+        return rows;
+    }
+
+    public WebElement getCol(String colXpath){
+        WebElement cell = driver.findElement(By.xpath(colXpath));
+        return cell;
+    }
+
 
 
 
