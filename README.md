@@ -31,3 +31,8 @@ This repository contains a sample test automation framework built using Selenium
 3. Make your changes and commit: git commit -m "Add feature"
 4. Push to your fork: git push origin feature-name
 5. Create a pull request.
+
+## Author
+
+Ajay Verma  
+LinkedIn : https://www.linkedin.com/in/ajayverma24/
