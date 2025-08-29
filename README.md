@@ -34,5 +34,5 @@ This repository contains a sample test automation framework built using Selenium
 
 ## Author
 
-Ajay Verma 247 
+Ajay Verma 247 This is master 
 LinkedIn : https://www.linkedin.com/in/ajayverma24/
