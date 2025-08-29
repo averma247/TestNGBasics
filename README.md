@@ -33,7 +33,6 @@ This repository contains a sample test automation framework built using Selenium
 5. Create a pull request.
 
 ## Author
-
-Ajay Verma 247 This is in Bug-Fix 
+Ajay Verma 247 This is in Bug-Fix
 
 LinkedIn : https://www.linkedin.com/in/ajayverma24/
